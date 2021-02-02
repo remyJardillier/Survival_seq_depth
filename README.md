@@ -13,11 +13,11 @@ Clinical and mRNA-seq datasets were obtained using the Broad GDAC FIREHOSE utili
 3. Clinical data:
 	3.a. On the 'Clinical' panel, click on 'Merge_Clinical'. A .zip file is downloaded.
 	3.b. Open this .zip file and copy the file 'cancer-name'.clin.merged.txt' 
-	(e.g. 'KIRC.clin.merged.txt') into the folder '../data_cancer/'cancer-name'/ (e.g. 'data_cancer/KIRC/).
+	(e.g. 'KIRC.clin.merged.txt') into the folder '../data_cancer/'cancer-name'/' (e.g. '../data_cancer/KIRC/').
 4. mRNA data:
 	4.a. On the 'mRNASeq' panel, click on 'mRNAseq_Preprocess'. A zip file is downloaded.
 	4.b. Open this .zip file and copy the file ''cancer-name'.uncv2.mRNAseq_RSEM_all.txt' 
-	(e.g. 'KIRC.uncv2.mRNAseq_RSEM_all.txt') into the folder '../data_cancer/'cancer-name'/ (e.g. 'data_cancer/KIRC/)..	
+	(e.g. 'KIRC.uncv2.mRNAseq_RSEM_all.txt') into the folder '../data_cancer/'cancer-name'/' (e.g. '../data_cancer/KIRC/').	
 	
 
 How to run the code 
@@ -26,7 +26,7 @@ How to run the code
 1. Open the file 'R_scripts/Survival_preScreening.Rproj' to open RStudio environment.
 2. Open the 'R_scripts/main.R' file and follow the instruction in the script. 
 
-As the running time is high, results will be saved all along the code in 'data_fit' into .RData files. Please check the code and remove the previous files if you want to launch the code a second time (previous data saved will be loaded otherwise). 
+As the running time is high, results will be saved all along the code in 'R_scripts/data_fit' into .RData files. Please check the code and remove the previous files if you want to launch the code a second time (previous data saved will be loaded otherwise). 
 
 
 Running times 
