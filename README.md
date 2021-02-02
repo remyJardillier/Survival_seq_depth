@@ -32,4 +32,4 @@ As the running time is high, results will be saved all along the code in 'R_scri
 Running times 
 ==================================
 
-The article value for the number of models to be learned is 50 (10 repetitions of 5-fold cross-validation). It can take a lot of times with 8 percentage of patients in the training set, 6 degradation factors of the sequencing depth, and 50 models learned in each case (typically 4 hours for one cancer), and we advice the user to first set K_folds = 3 (3 folds) and n_rep = 2 (2 repetitions)) for a first check.
+The article value for the number of models to be learned is 50 (10 repetitions of 5-fold cross-validation). It can take a lot of times with 8 percentage of patients in the training set, 6 degradation factors of the sequencing depth, and 50 models learned in each case (typically 4 hours for one cancer), and we advice the user to first set K_folds = 3 (3 folds) and n_rep = 2 (2 repetitions) for a first check.
