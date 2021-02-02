@@ -23,13 +23,13 @@ Clinical and mRNA-seq datasets were obtained using the Broad GDAC FIREHOSE utili
 How to run the code 
 ==================================
 
-1. Open the file 'R_scripts/Survival_preScreening.Rproj' to open RStudio environment.
+1. Open the file 'R_scripts/Survival_seq_depth.Rproj' to open RStudio environment.
 2. Open the 'R_scripts/main.R' file and follow the instruction in the script. 
 
-As the running time is high, results will be saved all along the code in 'R_scripts/data_fit' into .RData files. Please check the code and remove the previous files if you want to launch the code a second time (previous data saved will be loaded otherwise). 
+As the running time is high, results will be saved all along the code in 'R_scripts/data_fit' into .RData files. Please set 'learn_new_models' variable to 'TRUE' if you want to learn new models. Otherwise, previous models (if they exist) will be loaded.
 
 
 Running times 
 ==================================
 
-The article value for the number of models to be learned is 50 (10 repetitions of 5-fold cross-validation). It can take a lot of times with 6 IQR thresholds, 6 p-value thresholds, and 50 models learned (typically 15 hours), and we advice the user to first set K_folds = 3 (3 folds) and n_rep = 2 (2 repetitions)) for a first check.
+The article value for the number of models to be learned is 50 (10 repetitions of 5-fold cross-validation). It can take a lot of times with 8 percentage of patients in the training set, 6 degradation factors of the sequencing depth, and 50 models learned in each case (typically 4 hours for one cancer), and we advice the user to first set K_folds = 3 (3 folds) and n_rep = 2 (2 repetitions)) for a first check.
